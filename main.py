@@ -1,6 +1,7 @@
 import pygame
 import random
 import time
+import sys
 
 regularCells = []
 topCells = []
@@ -251,7 +252,7 @@ def main():
     print("Rows:", rows)
     print("Cols:", cols)
 
-    timestep = 0.5
+    timestep = float(sys.argv[1])
     print("Wait Time:", timestep)
 
     while not done:
