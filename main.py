@@ -88,6 +88,7 @@ class Cell(object):
         if self.timesPoisioned >= 4:
             if self.poisioned:
                 self.alive = False
+                self.poisioned = False
                 if self in aliveCells:
                     aliveCells.remove(self)
                     deadCells.append(self)
